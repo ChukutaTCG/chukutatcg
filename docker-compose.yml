@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+      CORS_ORIGIN: http://localhost:5173
+    restart: unless-stopped
+
+  # The frontend is a static build; serve it from any CDN/host, or uncomment
+  # below to build and preview it in a container.
+  #
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #   ports:
+  #     - "5173:4173"
+  #   depends_on:
+  #     - backend

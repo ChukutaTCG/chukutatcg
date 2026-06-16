@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy text-ink font-sans antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Respect users who prefer reduced motion. */
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  /* Visible focus styles for keyboard navigation. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-navy;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8;
+  }
+
+  .section-heading {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+  }
+
+  .gold-text {
+    @apply bg-gold-gradient bg-clip-text text-transparent;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-md border-2 border-gold
+      px-7 py-3 text-sm font-semibold tracking-wide text-gold transition-all
+      duration-300 hover:bg-gold-gradient hover:text-navy hover:shadow-card-hover;
+  }
+}
