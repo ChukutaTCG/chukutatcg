@@ -1,10 +1,10 @@
 import Reveal from './Reveal';
 
 const STATS = [
-  { value: 'National Security', label: 'Expertise at the core' },
-  { value: 'Tactical Strategy', label: 'Communications & positioning' },
-  { value: 'Mission Solutions', label: 'Driven towards delivery' },
-  { value: 'Emerging', label: 'Technology, responsibly adopted' },
+  { value: 'National Security', label: 'Protecting mission-critical interests' },
+  { value: 'Strategic Communications', label: 'Shaping narratives that drive action' },
+  { value: 'Mission Solutions', label: 'Turning complex challenges into outcomes' },
+  { value: 'Emerging Technology', label: 'Accelerating responsible innovation' },
 ];
 
 export default function About() {
