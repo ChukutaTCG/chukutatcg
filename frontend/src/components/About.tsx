@@ -1,7 +1,7 @@
 import Reveal from './Reveal';
 
 const STATS = [
-  { value: 'National', label: 'Security expertise at the core' },
+  { value: 'National Security', label: 'Expertise at the core' },
   { value: 'Strategic', label: 'Communications & positioning' },
   { value: 'Mission', label: 'Driven solutions delivery' },
   { value: 'Emerging', label: 'Technology, responsibly adopted' },
